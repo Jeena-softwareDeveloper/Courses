@@ -1,0 +1,42 @@
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+  
+    .header {
+      background-color: $primary-color;
+      color: #fff;
+      padding: 10px;
+      text-align: left;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .body {
+      .course-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+        border-top: 1px solid #ddd;
+  
+        span {
+          flex: 1;
+          text-align: center;
+          padding: 0 8px;
+  
+          &:first-child {
+            text-align: left; // Align the first column to the left
+          }
+        }
+  
+        &:hover {
+          background-color: #f9f9f9;
+        }
+      }
+    }
+  }
+  
